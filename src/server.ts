@@ -23,6 +23,6 @@ const server = createServer(app);
 
 
 
-server.listen(SERVER_PORT, () =>
+server.listen(SERVER_PORT || 4000, () =>
   console.log(`Server listening at port ${SERVER_PORT}`)
 );
