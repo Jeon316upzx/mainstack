@@ -18,11 +18,12 @@ database.once('connected', () => {
   console.log(`Database connected successfully`);
 })
 
-const { PORT } = config;
+const { PORT : SERVER_PORT } = config;
 const server = createServer(app);
 
+const PORT = SERVER_PORT || process.env.PORT
 
 
-server.listen(process.env.PORT || PORT , () =>
+server.listen(PORT , () =>
   console.log(`Server listening at port ${PORT}`)
 );
