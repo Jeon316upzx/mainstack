@@ -13,3 +13,10 @@ web_modules/
 
 # Optional eslint cache
 .eslintcache
+
+### dotenv ###
+.env
+
+
+
+# End of https://www.toptal.com/developers/gitignore/api/jenv,dotenv
